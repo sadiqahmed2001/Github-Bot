@@ -1,6 +1,6 @@
 import os
 
-def makecommits(days : int):
+def makecommits(days: int):
     if days < 1:
         os.system('git push')
     else:
@@ -13,4 +13,4 @@ def makecommits(days : int):
             os.system('git commit --date="'+dates +'" -m "first commit for the day!"')
             return days * makecommits(days -1)
         
-makecommits(60)
+makecommits(6)
