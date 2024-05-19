@@ -13,4 +13,4 @@ def makecommits(days: int):
             os.system('git commit --date="'+dates +'" -m "first commit for the day!"')
             return days * makecommits(days -1)
         
-makecommits(6)
+makecommits(665)
