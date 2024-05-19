@@ -12,4 +12,4 @@ def make_commits(days: int):
         os.system(f'git commit --date="{date}" -m "first commit for the day!"')
         make_commits(days - 1)
 
-make_commits(565)
+make_commits(880)
